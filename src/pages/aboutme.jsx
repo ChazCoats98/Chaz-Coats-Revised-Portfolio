@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./aboutmeStyles.css";
 
 export default class AboutMe extends React.Component {
     render() {
