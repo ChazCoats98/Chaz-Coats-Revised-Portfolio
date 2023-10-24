@@ -2,6 +2,7 @@ import React from "react";
 
 export default class ContactPage extends React.Component {
     render() {
+        return (
         <div class="contactBox">
                 <div class="contactDisplay">
                     <h2 class="contactHeader">CONTACT</h2>
@@ -17,5 +18,6 @@ export default class ContactPage extends React.Component {
                     </div>
                 </div>
             </div>
+        )
     }
 }

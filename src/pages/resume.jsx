@@ -2,8 +2,9 @@ import React from "react";
 
 export default class ResumePage extends React.Component {
     render() {
-        <div>
+        return (
 
+        <div>
         <div class="languageInfoBox">
         <div class="languageInfoDisplay">
             <h2 class="languageText" id="resume1">I've worked in a variety of different industries. 
@@ -82,5 +83,6 @@ export default class ResumePage extends React.Component {
         </div>
     </div>
     </div>
+        )
     }
 }
