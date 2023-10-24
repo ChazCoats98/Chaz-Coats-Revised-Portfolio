@@ -11,22 +11,22 @@ export default function Nav() {
                 <ul class="listInner">
                     <li>
                         <a>
-                            <span class="listText" id="aboutNav" to='/'>ABOUT</span>
+                            <Link class="listText" id="aboutNav" to='/'>ABOUT</Link>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <span class="listText" id="projectsNav" to='/portfolio'>PROJECTS</span>
+                            <Link class="listText" id="projectsNav" to='/portfolio'>PROJECTS</Link>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <span class="listText" id="resumeNav" to='/resume'>RESUME</span>
+                            <Link class="listText" id="resumeNav" to='/resume'>RESUME</Link>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <span class="listText" id="contactNav" to='/contact'>CONTACT</span>
+                            <Link class="listText" id="contactNav" to='/contact'>CONTACT</Link>
                         </a>
                     </li>
                 </ul>
