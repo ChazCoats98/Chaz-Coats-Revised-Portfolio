@@ -11,3 +11,936 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerBody {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  box-shadow: 0 0 10px black;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  transition: top .3s ease-in-out;
+  z-index: 3;
+}
+
+
+.scrollUp {
+  top: -140px;
+}
+
+.headerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100px;
+  width: 90%;
+}
+
+.headerText {
+  display: flex;
+  font-family: 'Cinzel', serif;
+  font-weight: 200;
+  font-size: 56px;
+  margin-top: 10px;
+  color: white;
+  align-items: center;
+}
+
+.navigation {
+  border-top: .5mm ridge gray;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  width: 90%;
+  height: 40%;
+}
+
+.horizontalList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.listInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0%;
+  margin-top: 0%;
+}
+
+.listText {
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+  font-size: 20px;
+}
+
+.listText:hover {
+  cursor: pointer;
+}
+
+.listText::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.listText:hover::after {
+  transform: scaleX(1);
+}
+
+.pageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fp-overflow {
+  height: 100%;
+}
+
+.aboutMeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-top: 240px;
+  z-index: 5;
+}
+
+.typedBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  top: 140px;
+  left: 0;
+  width: 100%;
+}
+
+.typedText {
+  font-family: 'Cinzel', serif;
+  font-size: 56px;
+  text-shadow: 0 0 5px grey;
+}
+
+.moreInfoContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.moreInfoBox {
+  display: flex;
+  align-items: center;
+  background-image: url("./assets/Background\ 4.jpg");
+  background-size: cover;
+  animation-name: moreInfoBox;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 10px grey;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.moreInfoText {
+  display: flex;
+  float: left;
+  text-indent: 20px;
+  text-align: justify;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.6px;
+  color: white;
+  text-shadow: 0 0 8px rgb(87, 83, 83);
+  margin: 0;
+  padding: 20px;
+  width: 60%;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0%;
+  padding: 0%;
+  padding-top: 40px;
+  width: 100%;
+  height: 10%
+}
+
+.displayButton {
+  display: flex;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.6px;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0%;
+  padding: 0%;
+  opacity: .6;
+}
+
+.displayButton:hover {
+  cursor: pointer;
+}
+
+.scrollBox {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  right: 50px;
+  z-index: 4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pageDescriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 5px;
+  height: 160px;
+}
+
+.pages {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  height: 12px;
+  width: 100%;
+  margin: 12px 0;
+  line-height: 12px;
+  left: 10px;
+  top: 10px;
+}
+
+.scrollBarBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollBar {
+  height: 160px;
+  width: 1px;
+  background: #b3afaf;
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.scrollBarShading {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background: #666;
+  top: 0;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.scroll50 {
+  height: 50%;
+}
+
+.scroll75 {
+  height: 75%;
+}
+
+.scroll100 {
+  height: 100%;
+}
+
+.pageNumber {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pageNumber:hover {
+  cursor: pointer;
+}
+
+.panelMove {
+  transition: top 400ms ease-out;
+}
+
+.projectsDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  width: 85%;
+  height: 90%;
+}
+
+.staticProjectsBox {
+  display: flex;
+  flex-direction: column;
+  height: 84%;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.p2Containers {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.projectBg {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0 10px grey;
+  width: 950px;
+  height: 90%;
+  margin: 10px;
+}
+
+.projectSlider {
+  left: 1000px;
+}
+
+.projectsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.projectsHeaderBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 5px;
+}
+
+.projectDisplay {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.projectDisplayInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+
+.projectTextBox {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+
+.projectDescription {
+  display: flex;
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-align: justify;
+  text-shadow: 0 0 10px black;
+  margin-right: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  width: 70%;
+}
+
+.projectDescriptionLeft {
+  margin-left: 70px;
+}
+
+.textBoxRight {
+  align-items: end;
+}
+
+.textBoxLeft {
+  align-items: start;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+
+.showButton {
+  font-family: 'Cinzel', serif;
+  text-shadow: 0 0 8px black;
+  margin: 0%;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: white;
+  opacity: .8;
+}
+
+.showButtonRight {
+  margin-right: 100px;
+}
+
+.showButtonLeft {
+  margin-left: 100px;
+}
+
+
+.showButton:hover {
+  cursor: pointer;
+}
+
+.hideButtonAlign {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+
+.hideButton {
+  font-family: 'Cinzel', serif;
+  text-shadow: 0 0 8px black;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: white;
+  opacity: .8;
+}
+
+.hideButton:hover {
+  cursor: pointer;
+}
+
+.projectTextInner {
+  margin-top: 40px;
+  font-family: 'Cinzel', serif;
+  text-shadow: 0 0 8px black;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: white;
+}
+
+.projectBtns {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.projectBtns::before {
+  content: "";
+  background-image: url('./assets/paperTexture.jpg');
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  border-radius: 10px;
+}
+
+
+.projectImg {
+  display: flex;
+  height: 75%;
+  width: 90%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgb(75, 72, 72);
+}
+
+.languageInfoBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageInfoDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  padding: 80px 10px 10px 10px;
+}
+
+.languageText {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.6px;
+  font-size: 36px;
+  text-shadow: 0 0 5px grey
+}
+
+.languagesList {
+  list-style: square;
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.languagesList li{
+  padding: 10px;
+  text-shadow: 0 0 5px grey
+}
+
+.resumeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+  height: fit-content;
+}
+
+.resumeDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: fit-content;
+  background-image: url("./assets/Background\ 4\ rt.jpg");
+  box-shadow: 0 0 10px grey;
+  border-radius: 15px;
+}
+
+.resumeDisplayInner {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.resumeText {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: 1.6px;
+}
+
+.educationSections {
+  padding: 0;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contactDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: contactDisplay;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 40%;
+  height: 60%;
+  background-image: url("./assets/Background\ 4.jpg");
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px gray;
+}
+
+.contactHeader {
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+}
+
+.buttonContainer {
+  display: flex;
+  
+}
+
+.contactBtns {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.contactBtns::before {
+  content: "";
+  background-image: url('./assets/paperTexture.jpg');
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  border-radius: 10px;
+}
+
+.contactContent {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  font-size: 26px;
+  letter-spacing: 1.6px;
+  width: 70%;
+}
+
+.contactLinks {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.6px;
+}
+
+#projectsHeader {
+  padding: 0%;
+  margin: 20px 0 10px 0;
+}
+
+#project1Box {
+  display: flex;
+}
+
+#project2Box {
+  display: flex;
+  justify-content: end;
+}
+
+#project3Box {
+  display: flex;
+}
+
+#project4Box {
+  display: flex;
+  justify-content: end;
+}
+
+#p3Header {
+  margin-right: 60px;
+}
+
+#p4Header {
+  margin-left: 60px;
+}
+
+#project1Bg {
+  position: relative;
+  left: -1200px;
+  margin-left: 40px;
+}
+
+#project2Bg {
+  position: relative;
+  right: -1200px;
+}
+
+#project3Bg {
+  position: relative;
+  left: -1200px;
+}
+
+#project4Bg {
+  position: relative;
+  right: -1200px;
+}
+
+#project1Display {
+  display: flex;
+  justify-content: end;
+}
+
+#pageWrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#panelWrap {
+  width: 100%;
+  height: 100%;
+}
+
+#personalImage {
+  display: flex;
+  float: left;
+  box-shadow: 0 0 10px black;
+  margin: 20px;
+  border-radius: 15px;
+  width: 30%;
+  height: 100%;
+}
+
+#resume1 {
+  display: flex;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+#resume2 {
+  display: flex;
+  margin: 0;
+}
+
+#resumeHeader {
+  display: flex;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  border-bottom: 2px ridge rgb(121, 107, 107);
+  width: 100%;
+  font-size: 48px;
+  margin: 0;
+  margin-top: 4px;
+}
+
+#workExperienceHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+
+}
+
+#edu1 {
+  font-size: 16px;
+}
+
+#edu2 {
+  font-size: 16px;
+}
+
+#edu3 {
+  font-size: 16px;
+}
+
+#educationHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+}
+
+#p1Button {
+  background-color: #666;
+  margin-right: 180px;
+}
+
+#p2Button {
+  background-color: #7f432d;
+  margin-left: 180px;
+}
+
+#p3Button {
+  background-color: #655242;
+  margin-right: 180px;
+}
+
+#emailBtn {
+  background-color: #857036;
+}
+
+#githubBtn {
+  background-color: #7f432d;
+}
+
+#linkedinBtn {
+  background-color: #655242;  
+}
+
+@keyframes moreInfoBox {
+  0% {
+      transform: translate(0, 0px);
+  }
+
+  50% {
+      transform: translate(0, 15px);
+  }
+
+  100% {
+      transform: translate(0, -0px);
+  }
+}
+
+@keyframes contactDisplay {
+  0% {
+      transform: translate(0, 0px);
+  }
+
+  50% {
+      transform: translate(0, 15px);
+  }
+
+  100% {
+      transform: translate(0, -0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerText {
+      font-size: 30px
+  }
+
+  .listText {
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  .typedText {
+      font-size: 30px;
+  }
+
+  .aboutMeBox {
+      width: 90%;
+  }
+
+  .moreInfoText {
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      padding: 10px;
+  }
+
+  #personalImage {
+      margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .headerText {
+      font-size: 50px
+  }
+
+  .listText {
+      font-size: 20px;
+  }
+
+  .typedText {
+      font-size: 46px;
+  }
+
+  .aboutMeBox {
+      width: 90%;
+  }
+
+  .moreInfoText {
+      font-size: 12px;
+      letter-spacing: 1.2px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .headerText {
+      font-size: 50px
+  }
+
+  .listText {
+      font-size: 20px;
+  }
+
+  .typedText {
+      font-size: 50px;
+  }
+
+  .aboutMeBox {
+      width: 80%;
+  }
+
+  .moreInfoText {
+      font-size: 14px;
+      letter-spacing: 1.2px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .headerText {
+      font-size: 56px
+  }
+
+  .listText {
+      font-size: 20px;
+  }
+
+  .typedText {
+      font-size: 56px;
+  }
+
+  .aboutMeBox {
+      width: 70%;
+  }
+
+  .moreInfoText {
+      font-size: 18px;
+      letter-spacing: 1.6px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .headerText {
+      font-size: 56px
+  }
+
+  .listText {
+      font-size: 20px;
+  }
+
+  .typedText {
+      font-size: 56px;
+  }
+
+  .aboutMeBox {
+      width: 60%;
+  }
+
+  .moreInfoText {
+      font-size: 18px;
+      letter-spacing: 1.6px;
+  }
+}

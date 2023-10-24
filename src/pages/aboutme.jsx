@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./aboutmeStyles.css";
 
 export default class AboutMe extends React.Component {
@@ -7,13 +6,8 @@ export default class AboutMe extends React.Component {
         return (
             <div class="pageBox">
                 <div class="aboutMeBox">
-                    <div class="typedBox">
-                        <h2 class="typedText" id="hiMessage"></h2>
-                        <h2 class="typedText" id="aboutMe"></h2>
-                        <h2 class="typedText" id="more"></h2>
-                    </div>
                         <div class="moreInfoBox">
-                            <img id="personalImage" src="./assets/me.jpg" alt="picture of Chaz Coats"/>
+                            <img id="personalImage" src="" alt="picture of Chaz Coats"/>
                             <p class="moreInfoText">I'm relatively new to the programming world, however I'm taking to it
                                 quickly.
                                 Currently I work as a Quality Engineer at an Aerospace company, but I'm looking to do

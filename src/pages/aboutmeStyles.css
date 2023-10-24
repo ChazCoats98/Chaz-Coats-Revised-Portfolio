@@ -43,7 +43,7 @@
 .moreInfoBox {
     display: flex;
     align-items: center;
-    background-image: url("./Background\ 4.jpg");
+    background-image: url("");
     background-size: cover;
     animation-name: moreInfoBox;
     animation-duration: 3s;
