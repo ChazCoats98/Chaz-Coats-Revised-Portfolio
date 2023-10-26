@@ -5,23 +5,6 @@ export default class ResumePage extends React.Component {
         return (
 
         <div>
-        <div class="languageInfoBox">
-        <div class="languageInfoDisplay">
-            <h2 class="languageText" id="resume1">I've worked in a variety of different industries. 
-                Through these industries I've interacted with a plethora of software and company websites which have taught me a lot about intuitive UI design and what works and doesn't work in relation to software design.</h2>
-            <h2 class="languageText" id="resume2">Coding languages I'm familiar with:</h2>
-            <ul class="languagesList">
-                <li id="lang1">I'm proficient with HTML, CSS, and JavaScript for front end development.</li>
-                <li id="lang2">I'm proficient with a variety of CSS and JavaScript frameworks (Bootstrap, Tailwind, JQuery, Vue, Svelte, Angular, ETC)</li>
-                <li id="lang3">I'm proficient with node.js and its packages for server side development (Express, React, Jest, ETC)</li>
-                <li id="lang4">I have a working knowledge of mySQL for database creation and management.</li>
-                <li id="lang5">I have a working knowledge of Python for automation.</li>
-                <div class="buttonBox">
-                    <h2 class="displayButton" id="seeResume">SEE RESUME</h2>
-                </div>
-            </ul>
-        </div>
-    </div>
     <div class="resumeBox">
         <div class="resumeDisplay">
             <div class="resumeBg">
@@ -74,9 +57,6 @@ export default class ResumePage extends React.Component {
                                 never graduated. I knew I wanted to be an Engineer but I realized Mechanical
                                 Engineering wasn't my field. </h5>
                         </li>
-                        <div class="buttonBox">
-                            <h2 class="displayButton" id="seeLanguages">SEE PROGRAMMING LANGUAGES</h2>
-                        </div>
                     </ul>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swapp&family=Cinzel&display=swap');
+
 html {
   background-image: url("./assets/Background\ 3.jpg");
   background-size: cover;
@@ -40,7 +42,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100px;
+  height: 70px;
   width: 90%;
 }
 
@@ -48,7 +50,7 @@ code {
   display: flex;
   font-family: 'Cinzel', serif;
   font-weight: 200;
-  font-size: 56px;
+  font-size: 40px;
   margin-top: 10px;
   color: white;
   align-items: center;
@@ -298,209 +300,125 @@ code {
   cursor: pointer;
 }
 
-.panelMove {
-  transition: top 400ms ease-out;
-}
-
-.projectsDisplay {
+.each-slide-effect > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 60px;
-  width: 85%;
-  height: 90%;
-}
-
-.staticProjectsBox {
-  display: flex;
-  flex-direction: column;
-  height: 84%;
-  width: 100%;
-  padding-bottom: 40px;
-}
-.p2Containers {
-  display: flex;
-  width: 100%;
-  height: 25%;
-}
-
-.projectBg {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  box-shadow: 0 0 10px grey;
-  width: 950px;
-  height: 90%;
-  margin: 10px;
-}
-
-.projectSlider {
-  left: 1000px;
-}
-
-.projectsBox {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  background-size: cover;
+  margin-top: 220px;
   height: 100%;
 }
 
-.projectsHeaderBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 15%;
-  margin-bottom: 5px;
+.browser {
+  font-size: 18px;
+	padding: 2.1em 0 0 0;
+	border-radius: 0.25em;
+  height: 600px;
+  width: 1183px;
+	background: #ddd;
+	display: inline-block;
+	position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.35em 1.9em rgba(0,0,0,.3);
 }
 
-.projectDisplay {
-  display: flex;
-  position: relative;
-  flex-direction: column;
+.browser .browserNav {
+	display: block;
+  box-sizing: border-box;
+	height: 2.1em;
+	position: absolute;
+	top: 0;
+  padding: 0.3em;
   width: 100%;
-  height: 100%;
-  border-radius: 15px;
+  background: linear-gradient(to bottom, #edeaed 0%, #dddfdd 100%);
+  border-bottom: 2px solid #cbcbcb;
 }
 
-.projectDisplayInner {
+.browser i {
+  display: inline-block;
+	height: 0.7em;
+	width: 0.7em;
+	border-radius: 0.45em;
+	background-color: #eee;
+	margin: 0.4em 0.15em;
+}
+
+.browser i:nth-child(1) {background-color: rgb(255, 86, 79)}
+
+.browser i:nth-child(1):hover {background-color: rgb(255, 20, 25)}
+
+.browser i:nth-child(2) {background-color: rgb(255, 183, 42)}
+
+.browser i:nth-child(2):hover {background-color: rgb(230, 175, 42)}
+
+.browser i:nth-child(3) {background-color: rgb(37, 198, 58)}
+
+.browser i:nth-child(3):hover {background-color: rgb(10, 225, 10)}
+
+.browser button {
+  font-size: 0.75em;
+  vertical-align: top;
+	height: 1.6em;
+  color: #aaa;
+	width: calc(100% - 6em);
+  border: 0.1em solid #E1E1E1;
+	border-radius: 0.25em;
+	background-color: #eee;
+  margin: 0.1em;
+  padding: 0 0.4em;
+}
+
+.browser button:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.browserContainer {
   display: flex;
-  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
   justify-content: end;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  height: 595px;
+  width: 1173px;
 }
 
-.projectTextBox {
+.moreInfoBtn {
   display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 100%;
-}
-
-.projectDescription {
-  display: flex;
-  font-family: 'Cinzel', serif;
-  color: white;
-  text-align: justify;
-  text-shadow: 0 0 10px black;
-  margin-right: 50px;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  width: 70%;
-}
-
-.projectDescriptionLeft {
-  margin-left: 70px;
-}
-
-.textBoxRight {
-  align-items: end;
-}
-
-.textBoxLeft {
-  align-items: start;
-}
-
-.imageBox {
-  display: flex;
+  background-color: black;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 30%;
+  margin-right: 20px;
+  height: 40px;
+  border-radius: 5px;
 }
 
-.showButton {
-  font-family: 'Cinzel', serif;
-  text-shadow: 0 0 8px black;
-  margin: 0%;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  color: white;
-  opacity: .8;
-}
-
-.showButtonRight {
-  margin-right: 100px;
-}
-
-.showButtonLeft {
-  margin-left: 100px;
-}
-
-
-.showButton:hover {
-  cursor: pointer;
-}
-
-.hideButtonAlign {
-  display: flex;
-  width: 100%;
-  height: 20%;
-  justify-content: center;
-}
-
-.hideButton {
-  font-family: 'Cinzel', serif;
-  text-shadow: 0 0 8px black;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  color: white;
-  opacity: .8;
-}
-
-.hideButton:hover {
-  cursor: pointer;
-}
-
-.projectTextInner {
-  margin-top: 40px;
-  font-family: 'Cinzel', serif;
-  text-shadow: 0 0 8px black;
-  font-size: 36px;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  color: white;
-}
-
-.projectBtns {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+.browserContainer p {
   font-family: 'Montserrat', sans-serif;
-  margin: 10px;
-  width: 100px;
-  height: 60px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px black;
+  color: white;
+  font-weight: 400;
+  margin: 5px;
 }
 
-.projectBtns::before {
-  content: "";
-  background-image: url('./assets/paperTexture.jpg');
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.25;
-  border-radius: 10px;
+#weatherApp {
+  background-image: url('./assets/WeatherApp.jpg');
+  background-size: contain;
 }
 
+#weatherWatch {
+  background-image: url('./assets/WeatherToWatch.jpg');
+  background-size: contain;
+}
 
-.projectImg {
+#walletWhiz {
+  background-image: url('./assets/WalletWhiz.jpg');
+  background-size: contain;
+}
+
+.projectsImages {
   display: flex;
-  height: 75%;
-  width: 90%;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgb(75, 72, 72);
+  height: 595px;
 }
 
 .languageInfoBox {
@@ -543,6 +461,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
   width: 100%;
   padding-top: 80px;
   height: fit-content;
@@ -579,6 +498,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 260px;
   width: 100%;
   height: 100%;
 }
@@ -609,12 +529,18 @@ code {
   
 }
 
+.buttonContainer a {
+  text-decoration: none;
+  color: white;
+}
+
 .contactBtns {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
   margin: 10px;
   width: 100px;
   height: 60px;
@@ -908,7 +834,7 @@ code {
 
 @media only screen and (min-width: 992px) {
   .headerText {
-      font-size: 56px
+      font-size: 50px
   }
 
   .listText {
@@ -931,7 +857,7 @@ code {
 
 @media only screen and (min-width: 1200px) {
   .headerText {
-      font-size: 56px
+      font-size: 50px
   }
 
   .listText {

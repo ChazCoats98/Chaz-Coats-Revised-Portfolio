@@ -13,7 +13,7 @@ export default class ContactPage extends React.Component {
                                 id="emailBtn">EMAIL</span></a>
                         <a href="https://github.com/ChazCoats98"><span class="contactBtns"
                                 id="githubBtn">GITHUB</span></a>
-                        <a href="www.linkedin.com/in/chaz-coats-9a333b290"><span class="contactBtns"
+                        <a href="https://www.linkedin.com/in/chaz-coats-9a333b290"><span class="contactBtns"
                                 id="linkedinBtn">LINKEDIN</span></a>
                     </div>
                 </div>
