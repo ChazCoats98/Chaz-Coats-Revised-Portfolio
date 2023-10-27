@@ -33,7 +33,7 @@ export default class PortfolioPage extends React.Component {
                     </button>
                     <div className='browserContainer' id='weatherWatch'>
                         <div className='moreInfoBtn'>
-                    <p>Click for more info</p>
+                    <p>CLICK FOR MORE INFO</p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default class PortfolioPage extends React.Component {
                     </button>
                     <div className='browserContainer' id='walletWhiz'>
                         <div className='moreInfoBtn'>
-                    <p>Click for more info</p>
+                    <p>CLICK FOR MORE INFO</p>
                         </div>
                     </div>
                 </div>
