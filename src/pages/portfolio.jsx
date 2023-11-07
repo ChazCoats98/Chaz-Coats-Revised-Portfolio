@@ -15,7 +15,7 @@ export default class PortfolioPage extends React.Component {
                     https://chazcoats98.github.io/Chaz-Coats-weather-application/
                     </button>
                     <div className='browserContainer' id='weatherApp'>
-                        <div className='moreInfoBtn'>
+                        <div className='moreInfoBtn' id='infoBtn1'>
                         <p>CLICK FOR MORE INFO</p>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ export default class PortfolioPage extends React.Component {
                     https://eecmanny.github.io/Weather-To-Watch/
                     </button>
                     <div className='browserContainer' id='weatherWatch'>
-                        <div className='moreInfoBtn'>
+                        <div className='moreInfoBtn' id='infoBtn2'>
                     <p>CLICK FOR MORE INFO</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default class PortfolioPage extends React.Component {
                     https://walletwizzz-e48c873597e2.herokuapp.com/homepage
                     </button>
                     <div className='browserContainer' id='walletWhiz'>
-                        <div className='moreInfoBtn'>
+                        <div className='moreInfoBtn' id='infoBtn3'>
                     <p>CLICK FOR MORE INFO</p>
                         </div>
                     </div>
