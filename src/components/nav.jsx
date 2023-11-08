@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+//creates nav component for pages and uses links created with react router dom to navigate to each page
 export default function Nav() {
     return (
         <header class="headerBody">
