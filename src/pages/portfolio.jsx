@@ -1,8 +1,26 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+import $ from 'jquery';
 import 'react-slideshow-image/dist/styles.css';
 
 export default class PortfolioPage extends React.Component {
+    jQuerycode = () => {
+        $('#infoBtn1').on('click', function(){
+            console.log('clicked');
+            $('.browserInner').toggleClass('hideBg');
+        });
+        $('#infoBtn2').on('click', function(){
+            console.log('clicked');
+            $('.browserInner').toggleClass('hideBg');
+        });
+        $('#infoBtn3').on('click', function(){
+            console.log('clicked');
+            $('.browserInner').toggleClass('hideBg');
+        });
+    }
+    componentDidMount() {
+        this.jQuerycode();
+    }
     render () {
         return (
             <Slide autoplay = {false}>
@@ -15,8 +33,10 @@ export default class PortfolioPage extends React.Component {
                     https://chazcoats98.github.io/Chaz-Coats-weather-application/
                     </button>
                     <div className='browserContainer' id='weatherApp'>
+                        <div className='browserInner'>
                         <div className='moreInfoBtn' id='infoBtn1'>
                         <p>CLICK FOR MORE INFO</p>
+                        </div>
                         </div>
                     </div>
                     </div>
@@ -32,8 +52,10 @@ export default class PortfolioPage extends React.Component {
                     https://eecmanny.github.io/Weather-To-Watch/
                     </button>
                     <div className='browserContainer' id='weatherWatch'>
+                        <div className='browserInner'>
                         <div className='moreInfoBtn' id='infoBtn2'>
                     <p>CLICK FOR MORE INFO</p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -49,8 +71,10 @@ export default class PortfolioPage extends React.Component {
                     https://walletwizzz-e48c873597e2.herokuapp.com/homepage
                     </button>
                     <div className='browserContainer' id='walletWhiz'>
-                        <div className='moreInfoBtn' id='infoBtn3'>
-                    <p>CLICK FOR MORE INFO</p>
+                        <div className='browserInner'>
+                            <div className='moreInfoBtn' id='infoBtn3'>
+                                <p>CLICK FOR MORE INFO</p>
+                            </div>
                         </div>
                     </div>
                 </div>

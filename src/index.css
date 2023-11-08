@@ -419,6 +419,14 @@ code {
   width: 1173px;
 }
 
+.browserInner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .moreInfoBtn {
   display: flex;
   background-color: black;
@@ -434,7 +442,7 @@ code {
   cursor: pointer;
 }
 
-.browserContainer p {
+.browserInner p {
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 300;
@@ -455,6 +463,10 @@ code {
 #walletWhiz {
   background-image: url('./assets/WalletWhiz.jpg');
   background-size: contain;
+}
+
+.hideBg {
+  backdrop-filter: blur(5px);
 }
 
 .projectsImages {
